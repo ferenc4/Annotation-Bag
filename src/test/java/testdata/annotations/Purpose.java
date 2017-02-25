@@ -1,4 +1,4 @@
-package annotation_bag.testdata.annotations;
+package testdata.annotations;
 
 import annotation_bag.annotations.author;
 import annotation_bag.annotations.date;

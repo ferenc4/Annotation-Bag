@@ -2,17 +2,17 @@ package annotation_bag;
 
 import annotation_bag.annotations.author;
 import annotation_bag.annotations.date;
-import annotation_bag.testdata.annotations.Purpose;
-import annotation_bag.testdata.codebase.AnnotatedByPurpose;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import testdata.annotations.Purpose;
+import testdata.codebase.AnnotatedByPurpose;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 
-import static annotation_bag.testdata.StringifiedAnnotations.PURPOSE_SHOW_IT_WORKS;
 import static org.junit.Assert.assertEquals;
+import static testdata.StringifiedAnnotations.PURPOSE_SHOW_IT_WORKS;
 
 @author("Ferenc Fazekas")
 @date("2/25/2017")

@@ -1,8 +1,8 @@
-package annotation_bag.testdata.codebase;
+package testdata.codebase;
 
 import annotation_bag.annotations.author;
 import annotation_bag.annotations.date;
-import annotation_bag.testdata.annotations.Purpose;
+import testdata.annotations.Purpose;
 
 @author("Ferenc Fazekas")
 @date("2/25/2017")
