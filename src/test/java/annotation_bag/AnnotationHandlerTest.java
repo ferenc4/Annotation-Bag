@@ -1,5 +1,7 @@
 package annotation_bag;
 
+import annotation_bag.annotations.author;
+import annotation_bag.annotations.date;
 import annotation_bag.testdata.annotations.Purpose;
 import annotation_bag.testdata.codebase.AnnotatedByPurpose;
 import org.junit.After;
@@ -12,10 +14,8 @@ import java.util.ArrayList;
 import static annotation_bag.testdata.StringifiedAnnotations.ANNOTATED_BY_PURPOSE_ANNOTATION_0;
 import static org.junit.Assert.assertEquals;
 
-/**
- * @author Ferenc Fazekas
- * @date 2/25/2017
- */
+@author("Ferenc Fazekas")
+@date("2/25/2017")
 public class AnnotationHandlerTest {
 
     @Test

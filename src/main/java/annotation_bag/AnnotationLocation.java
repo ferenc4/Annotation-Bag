@@ -1,8 +1,9 @@
 package annotation_bag;
 
-/**
- * @author Ferenc Fazekas
- * @date 2/25/2017.
- */
+import annotation_bag.annotations.author;
+import annotation_bag.annotations.date;
+
+@author("Ferenc Fazekas")
+@date("2/25/2017")
 public enum AnnotationLocation {
 }

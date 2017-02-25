@@ -1,7 +1,4 @@
-package annotation_bag.testdata.annotations;
-
-import annotation_bag.annotations.author;
-import annotation_bag.annotations.date;
+package annotation_bag.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -9,6 +6,6 @@ import java.lang.annotation.RetentionPolicy;
 @author("Ferenc Fazekas")
 @date("2/25/2017")
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Purpose {
+public @interface author {
     String value();
 }

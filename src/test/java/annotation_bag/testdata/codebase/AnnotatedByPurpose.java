@@ -1,11 +1,11 @@
 package annotation_bag.testdata.codebase;
 
+import annotation_bag.annotations.author;
+import annotation_bag.annotations.date;
 import annotation_bag.testdata.annotations.Purpose;
 
-/**
- * @author Ferenc Fazekas
- * @date 2/25/2017
- */
+@author("Ferenc Fazekas")
+@date("2/25/2017")
 @Purpose("to show that the @Purpose annotation works")
 public class AnnotatedByPurpose {
     @Purpose("to print hello world")
