@@ -3,24 +3,21 @@ Collects all of the annotated classes in a code base based on configurations pas
 
 # Intro
 Annotations can tell a lot of information about your code base. They can show:
-- how many test methods you have</li>
-- how many and which classes were created by a specific user</li>
-<code>
+- how many test methods you have
+- how many and which classes were created by a specific user
+<span>
 
     @author("bob")
-    
-</code>
-- a (class count/date) chart of how new functionality developed in comparison to the test base, which can serve as a proof of test driven development</li>
-<code>
+</span>
+- a (class count/date) chart of how new functionality developed in comparison to the test base, which can serve as a proof of test driven development
+<span>
 
     @created("2/25/2017")
-    
-</code>
-- a map of your requirements to your class names, where an id corresponds to a requirement</li>
-<code>
+</span>
+- a map of your requirements to your class names, where an id corresponds to a requirement
+<span>
 
     @spec("453")
-    
-</code>
+</span>
 These are just some of the things you can do, but the possiblities are endless.
 This library was developed to make it easier to extract this information from your code base as a whole.
