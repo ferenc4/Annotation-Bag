@@ -3,6 +3,7 @@ Collects all of the annotated classes in a code base based on configurations pas
 
 # Intro
 Annotations can tell a lot of information about your code base. If used accordingly they can show:
+
 how many test methods you have
 how many classes were created by Bob
 
