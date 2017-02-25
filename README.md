@@ -18,4 +18,4 @@ Annotations can tell a lot of information about your pre base. They can show:
 </pre>
 
 These are just some of the things you can do, but the possiblities are endless.
-This library was developed to make it easier to extract this information from your pre base as a whole.
+This library was developed to make it easier to extract this information from your code base as a whole.
