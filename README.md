@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag)
 # Annotation-Bag
 Collects all of the annotated classes in a pre base based on configurations passed to the library.
 
