@@ -4,16 +4,16 @@ Collects all of the annotated classes in a code base based on configurations pas
 # Intro
 Annotations can tell a lot of information about your code base. If used accordingly they can show:
 
-how many test methods you have
-how many classes were created by Bob
+- how many test methods you have
+- how many classes were created by Bob
 
     @author("bob")
 
-a (class count/date) chart of how new functionality developed in comparison to the test base, which can serve as a proof of test driven development
+- a (class count/date) chart of how new functionality developed in comparison to the test base, which can serve as a proof of test driven development
 
     @created("2/25/2017")
     
-a map of your requirements to your class names, where an id corresponds to a requirement
+- a map of your requirements to your class names, where an id corresponds to a requirement
 
     @spec("453")
 
