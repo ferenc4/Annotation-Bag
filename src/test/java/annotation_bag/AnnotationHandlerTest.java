@@ -11,7 +11,7 @@ import org.junit.Test;
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 
-import static annotation_bag.testdata.StringifiedAnnotations.ANNOTATED_BY_PURPOSE_ANNOTATION_0;
+import static annotation_bag.testdata.StringifiedAnnotations.PURPOSE_SHOW_IT_WORKS;
 import static org.junit.Assert.assertEquals;
 
 @author("Ferenc Fazekas")
@@ -23,7 +23,7 @@ public class AnnotationHandlerTest {
         ArrayList<Annotation> annotations = new AnnotationHandler()
                 .extractAllFrom(AnnotatedByPurpose.class, Purpose.class);
         assertEquals(1, annotations.size());
-        assertEquals(ANNOTATED_BY_PURPOSE_ANNOTATION_0, annotations.get(0).toString());
+        assertEquals(PURPOSE_SHOW_IT_WORKS, annotations.get(0).toString());
     }
 
     @Before
