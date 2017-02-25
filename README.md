@@ -1,4 +1,4 @@
-# Annotation-Bag [![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag) [![Coverage Status](https://coveralls.io/repos/ferenc4/Annotation-Bag/badge.svg?branch=master)](https://coveralls.io/r/ferenc4/Annotation-Bag?branch=master)
+# Annotation-Bag [![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag) [![Coverage Status](https://coveralls.io/repos/github/ferenc4/Annotation-Bag/badge.svg?branch=master)](https://coveralls.io/github/ferenc4/Annotation-Bag?branch=master)
 Collects all of the annotated classes in a pre base based on configurations passed to the library.
 
 # Intro
