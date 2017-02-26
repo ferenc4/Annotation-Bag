@@ -5,23 +5,23 @@ import annotation_bag.annotations.date;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import testdata.annotations.Purpose;
+import testdata.annotations.purpose;
 import testdata.codebase.AnnotatedByPurpose;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
-import static testdata.StringifiedAnnotations.PURPOSE_SHOW_IT_WORKS;
 
 @author("Ferenc Fazekas")
 @date("2/25/2017")
 public class AnnotationHandlerTest {
+    private static final String PURPOSE_SHOW_IT_WORKS = "@testdata.annotations.purpose(value=to show that the @purpose annotation works)";
 
     @Test
     public void getSingleAnnotationFromClass(){
         ArrayList<Annotation> annotations = new AnnotationHandler()
-                .extractAllFrom(AnnotatedByPurpose.class, Purpose.class);
+                .extractAllFrom(AnnotatedByPurpose.class, purpose.class);
         assertEquals(1, annotations.size());
         assertEquals(PURPOSE_SHOW_IT_WORKS, annotations.get(0).toString());
     }

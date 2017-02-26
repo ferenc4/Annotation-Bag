@@ -2,13 +2,13 @@ package testdata.codebase;
 
 import annotation_bag.annotations.author;
 import annotation_bag.annotations.date;
-import testdata.annotations.Purpose;
+import testdata.annotations.purpose;
 
 @author("Ferenc Fazekas")
 @date("2/25/2017")
-@Purpose("to show that the @Purpose annotation works")
+@purpose("to show that the @purpose annotation works")
 public class AnnotatedByPurpose {
-    @Purpose("to print hello world")
+    @purpose("to print hello world")
     void hello(){
         System.out.println("Hello world!");
     }

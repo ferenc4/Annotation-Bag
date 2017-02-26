@@ -2,7 +2,7 @@
 Collects all of the annotated classes in a pre base based on configurations passed to the library.
 
 # Intro
-Annotations can tell a lot of information about your pre base. They can show:
+Annotations can tell a lot of information about your code base. They can show:
 - how many test methods you have
 - how many and which classes were created by a specific user
 <pre>
@@ -19,3 +19,4 @@ Annotations can tell a lot of information about your pre base. They can show:
 
 These are just some of the things you can do, but the possiblities are endless.
 This library was developed to make it easier to extract this information from your code base as a whole.
+

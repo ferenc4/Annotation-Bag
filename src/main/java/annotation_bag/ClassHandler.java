@@ -23,13 +23,13 @@ public class ClassHandler {
     public void executeForAll(Method m) {
         output = new ArrayList<>();
         File[] level0Children = parent.listFiles();
-        viewFiles(m, level0Children);
+        viewAllFiles(m, level0Children);
     }
 
-    void viewFiles(Method m, File... files) {
+    void viewAllFiles(Method m, File... files) {
         for (File file : files) {
             if (file.isDirectory()) {
-                viewFiles(m, file.listFiles()); // Calls same method again.
+                viewAllFiles(m, file.listFiles()); // Calls itself again.
             } else {
                 try {
                     output.add(String.valueOf(m.invoke(m.getDeclaringClass().newInstance(), file)));
