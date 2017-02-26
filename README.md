@@ -1,4 +1,4 @@
-# Annotation-Bag [![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag) [![Coverage Status](https://coveralls.io/repos/github/nebula-plugins/gradle-lint-plugin/badge.svg?branch=master)](https://coveralls.io/github/nebula-plugins/gradle-lint-plugin?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Annotation-Bag [![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag) [![codecov](https://codecov.io/gh/ferenc4/Annotation-Bag/branch/master/graph/badge.svg)](https://codecov.io/gh/ferenc4/Annotation-Bag) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Collects all of the annotated classes in a pre base based on configurations passed to the library.
 
 # Intro
