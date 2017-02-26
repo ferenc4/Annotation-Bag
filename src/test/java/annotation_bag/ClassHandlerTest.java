@@ -14,10 +14,10 @@ import java.io.File;
 @date("2/26/2017")
 public class ClassHandlerTest {
     @Test
-    public void loadClass() throws Exception {
+    public void getClassFromJavaFile() throws Exception {
         Class<AnnotatedByPurpose> expected = AnnotatedByPurpose.class;
-        File classFile = new File("build/classes/test/testdata/codebase/AnnotatedByPurpose.class");
-        Class outputClass = ClassHandler.getClassOnClassPathFromFile(classFile, "testdata");
+        File classFile = new File("src/test/java/testdata/codebase/AnnotatedByPurpose.java");
+        Class outputClass = ClassHandler.getClassOnClassPathFromJavaFile(classFile, "testdata");
         Assertions.assertThat(expected).isEqualTo(outputClass);
     }
 

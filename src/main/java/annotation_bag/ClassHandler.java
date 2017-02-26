@@ -10,11 +10,13 @@ import java.util.regex.Pattern;
 @author("Ferenc Fazekas")
 @date("2/25/2017")
 public class ClassHandler {
-    public static Class getClassOnClassPathFromFile(File classFile, String rootPackage) throws Exception {
-        Matcher packagePathMatcher = Pattern.compile(".*(" + rootPackage + ".*)").matcher(classFile.getCanonicalPath());
+    public static Class getClassOnClassPathFromJavaFile(File classFile, String rootPackage) throws Exception {
+        String canonicalPath = classFile.getCanonicalPath();
+        assert canonicalPath.endsWith(".java");
+        Matcher packagePathMatcher = Pattern.compile(".*(" + rootPackage + ".*)").matcher(canonicalPath);
         assert packagePathMatcher.find();
         String packageFilePath = packagePathMatcher.group(1);
-        String packagePath = packageFilePath.substring(0, packageFilePath.length() - ".class".length());
+        String packagePath = packageFilePath.substring(0, packageFilePath.length() - ".java".length());
         packagePath = packagePath.replaceAll("\\\\|/", ".");
         return Class.forName(packagePath);
     }
