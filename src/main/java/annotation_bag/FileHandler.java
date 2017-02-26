@@ -10,12 +10,12 @@ import java.util.ArrayList;
 
 @author("Ferenc Fazekas")
 @date("2/25/2017")
-public class ClassHandler {
+public class FileHandler {
 
     private final File parent;
     private ArrayList<String> output = new ArrayList<>();
 
-    public ClassHandler(String folderPath) {
+    public FileHandler(String folderPath) {
         parent = new File(folderPath);
         assert parent.exists();
     }

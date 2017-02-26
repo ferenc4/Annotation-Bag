@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @author("Ferenc Fazekas")
 @date("2/26/2017")
-public class ClassHandlerTest {
+public class FileHandlerTest {
     @Test
     public void executeMethodOnEachClassInFolderAndSubFolders() throws NoSuchMethodException {
         String[] expected = {
@@ -26,10 +26,10 @@ public class ClassHandlerTest {
                 "Date2_27_17_Entry1.java",
                 "Date2_27_17_Entry2.java",
                 "Date2_28_17_Entry1.java"};
-        ClassHandler classHandler = new ClassHandler("src/test/java/testdata/codebase/date_stats");
+        FileHandler fileHandler = new FileHandler("src/test/java/testdata/codebase/date_stats");
         Method m = PrintFileName.class.getMethod("savename", File.class);
-        classHandler.executeForAll(m);
-        assertThat(classHandler.getOutput()).containsExactlyInAnyOrder(expected);
+        fileHandler.executeForAll(m);
+        assertThat(fileHandler.getOutput()).containsExactlyInAnyOrder(expected);
     }
 
     @Before
