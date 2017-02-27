@@ -5,7 +5,9 @@ import annotation_bag.annotations.date;
 import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import testdata.codebase.AnnotatedByPurpose;
 
 import java.io.File;
@@ -13,6 +15,9 @@ import java.io.File;
 @author("Ferenc Fazekas")
 @date("2/26/2017")
 public class ClassHandlerTest {
+    @Rule
+    public ExpectedException expectedEx = ExpectedException.none();
+
     @Test
     public void getClassFromJavaFilePathWithForwardSlashes() throws Exception {
         Class<AnnotatedByPurpose> expected = AnnotatedByPurpose.class;
@@ -27,6 +32,19 @@ public class ClassHandlerTest {
         File classFile = new File("src\\test\\java\\testdata\\codebase\\AnnotatedByPurpose.java");
         Class outputClass = ClassHandler.getClassOnClassPathFromJavaFile(classFile, "testdata");
         Assertions.assertThat(expected).isEqualTo(outputClass);
+    }
+
+    @Test(expected = ClassNotFoundException.class)
+    public void attemptToGetNonExistentClass() throws Exception {
+        File classFile = new File("src/test/java/testdata/This file doesn't exist.java");
+        ClassHandler.getClassOnClassPathFromJavaFile(classFile, "testdata");
+        expectedEx.expectMessage("testdata.This file doesn't exist");
+    }
+
+    @Test(expected = AssertionError.class)
+    public void rootPackageNameMissingFromPath() throws Exception {
+        File classFile = new File("src/test/java/testdata/codebase/AnnotatedByPurpose.java");
+        ClassHandler.getClassOnClassPathFromJavaFile(classFile, "bad");
     }
 
     @Before

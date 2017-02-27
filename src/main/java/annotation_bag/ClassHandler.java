@@ -12,11 +12,14 @@ import java.util.regex.Pattern;
 public class ClassHandler {
     public static Class getClassOnClassPathFromJavaFile(File classFile, String rootPackage) throws Exception {
         String canonicalPath = classFile.getCanonicalPath();
-        assert canonicalPath.endsWith(".java");
+        String suffix = ".java";
+        String invalidSuffix = "Filename expected to end with \"" + suffix + "\", but was \"" + canonicalPath + "\"";
+        String missingPackage = "Filepath expected to contain package \"" + rootPackage + "\", but was \"" + canonicalPath + "\"";
+        assert canonicalPath.endsWith(suffix) : invalidSuffix;
         Matcher packagePathMatcher = Pattern.compile(".*(" + rootPackage + ".*)").matcher(canonicalPath);
-        assert packagePathMatcher.find();
+        assert packagePathMatcher.find() : missingPackage;
         String packageFilePath = packagePathMatcher.group(1);
-        String packagePath = packageFilePath.substring(0, packageFilePath.length() - ".java".length());
+        String packagePath = packageFilePath.substring(0, packageFilePath.length() - suffix.length());
         packagePath = packagePath.replaceAll("\\\\|/", ".");
         return Class.forName(packagePath);
     }
