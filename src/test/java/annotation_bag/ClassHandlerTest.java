@@ -14,9 +14,17 @@ import java.io.File;
 @date("2/26/2017")
 public class ClassHandlerTest {
     @Test
-    public void getClassFromJavaFile() throws Exception {
+    public void getClassFromJavaFilePathWithForwardSlashes() throws Exception {
         Class<AnnotatedByPurpose> expected = AnnotatedByPurpose.class;
         File classFile = new File("src/test/java/testdata/codebase/AnnotatedByPurpose.java");
+        Class outputClass = ClassHandler.getClassOnClassPathFromJavaFile(classFile, "testdata");
+        Assertions.assertThat(expected).isEqualTo(outputClass);
+    }
+
+    @Test
+    public void getClassFromJavaFilePathWithBackwardSlashes() throws Exception {
+        Class<AnnotatedByPurpose> expected = AnnotatedByPurpose.class;
+        File classFile = new File("src\\test\\java\\testdata\\codebase\\AnnotatedByPurpose.java");
         Class outputClass = ClassHandler.getClassOnClassPathFromJavaFile(classFile, "testdata");
         Assertions.assertThat(expected).isEqualTo(outputClass);
     }
