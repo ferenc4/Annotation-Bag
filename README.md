@@ -4,6 +4,9 @@ Collects all of the annotated classes in a pre base based on configurations pass
 # Intro
 Annotations can tell a lot of information about your code base. They can show:
 - how many test methods you have
+<pre>
+@Test
+</pre>
 - how many and which classes were created by a specific user
 <pre>
 @author("bob")
