@@ -1,5 +1,5 @@
 # Annotation-Bag [![Build Status](https://travis-ci.org/ferenc4/Annotation-Bag.svg?branch=master)](https://travis-ci.org/ferenc4/Annotation-Bag) [![codecov](https://codecov.io/gh/ferenc4/Annotation-Bag/branch/master/graph/badge.svg)](https://codecov.io/gh/ferenc4/Annotation-Bag) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Collects all of the annotated classes in a pre base based on configurations passed to the library.
+The library collects and filters annotations in a codebase to allow users to extract meaningful information for documentation from Java annotations.
 
 # Intro
 Annotations can tell a lot of information about your code base. They can show:
