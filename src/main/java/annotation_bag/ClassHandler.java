@@ -29,7 +29,7 @@ public class ClassHandler {
         return Class.forName(packagePath);
     }
 
-    static Class<?> includeSrcFile(File sourceFile, String classname) throws IOException, ClassNotFoundException {
+    public static Class<?> includeSrcFile(File sourceFile, String classname) throws IOException, ClassNotFoundException {
         // compile the source file
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
