@@ -23,3 +23,14 @@ Annotations can tell a lot of information about your code base. They can show:
 These are just some of the things you can do, but the possiblities are endless.
 This library was developed to make it easier to extract this information from your code base as a whole.
 
+# Requirements
+## Files and annotations
+As a user I should be able to load and compile java files that are not on the classpath.
+As a user I should be able to view the list of java files on the classpath grouped by annotations.
+As a user I should be able to view the list of annotations grouped by java files on the classpath.
+## Filters
+As a user I should be able to view all the files and annotations in a given codebase.
+As a user I should be able to filter annotations by type.
+As a user I should be able to filter annotations by value.
+As a user I should be able to filter files by prefix.
+As a user I should be able to filter files by suffix, while maintaining the ".java" file extension.
