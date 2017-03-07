@@ -26,11 +26,13 @@ This library was developed to make it easier to extract this information from yo
 # User requirements
 As a user I should be able to:
 
-1. load and compile java files that are not on the classpath.
-1. view the list of java files on the classpath grouped by annotations.
-1. view the list of annotations grouped by java files on the classpath.
-1. view all the files and annotations in a given codebase.
-1. filter annotations by type.
-1. filter annotations by value.
-1. filter files by prefix.
-1. filter files by suffix, while maintaining the ".java" file extension.
+1. load and compile java files that are not on the classpath
+1. view the list of annotated java files on the classpath
+    1. grouped by annotations
+    1. grouped by java files
+1. filter annotations 
+    1. by type
+    1. by value
+1. filter files 
+    1. by prefix
+    1. by suffix, ignoring the ".java" file extension
