@@ -24,14 +24,12 @@ These are just some of the things you can do, but the possiblities are endless.
 This library was developed to make it easier to extract this information from your code base as a whole.
 
 # Requirements
-## Files and annotations
-1. As a user I should be able to load and compile java files that are not on the classpath.</li>
-2. As a user I should be able to view the list of java files on the classpath grouped by annotations.
-3. As a user I should be able to view the list of annotations grouped by java files on the classpath.
-
-## Filters
-4. As a user I should be able to view all the files and annotations in a given codebase.
-5. As a user I should be able to filter annotations by type.
-6. As a user I should be able to filter annotations by value.
-7. As a user I should be able to filter files by prefix.
-8. As a user I should be able to filter files by suffix, while maintaining the ".java" file extension.
+As a user I should be able to:
+1. load and compile java files that are not on the classpath.</li>
+1. view the list of java files on the classpath grouped by annotations.
+1. view the list of annotations grouped by java files on the classpath.
+1. view all the files and annotations in a given codebase.
+1. filter annotations by type.
+1. filter annotations by value.
+1. filter files by prefix.
+1. filter files by suffix, while maintaining the ".java" file extension.
