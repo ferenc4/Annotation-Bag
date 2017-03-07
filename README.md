@@ -28,6 +28,7 @@ This library was developed to make it easier to extract this information from yo
 1. As a user I should be able to load and compile java files that are not on the classpath.</li>
 2. As a user I should be able to view the list of java files on the classpath grouped by annotations.
 3. As a user I should be able to view the list of annotations grouped by java files on the classpath.
+
 ## Filters
 4. As a user I should be able to view all the files and annotations in a given codebase.
 5. As a user I should be able to filter annotations by type.
