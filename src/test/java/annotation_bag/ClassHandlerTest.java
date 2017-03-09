@@ -2,6 +2,7 @@ package annotation_bag;
 
 import annotation_bag.annotations.author;
 import annotation_bag.annotations.date;
+import annotation_bag.annotations.spec;
 import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
@@ -44,6 +45,7 @@ public class ClassHandlerTest {
     }
 
     @Test
+    @spec("1.")
     public void includeSrcFile() throws Exception {
         // create an empty source file
         File sourceFile = File.createTempFile("Hello", ".java");
